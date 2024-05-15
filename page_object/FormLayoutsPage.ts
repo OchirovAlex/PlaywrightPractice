@@ -1,4 +1,4 @@
-class formLayouts{
+class FormLayouts{
 
     async visit({page}){
         await page.goto('http://localhost:4200/pages/forms/layouts')
@@ -20,4 +20,4 @@ class formLayouts{
     }
 }
 
-export const formLayoutsPage = new formLayouts();
+export const FormLayoutsPage = new FormLayouts();
