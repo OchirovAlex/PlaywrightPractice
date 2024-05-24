@@ -20,5 +20,6 @@ export class Droppable{
     public async simple(){
         await this.page.locator(this.dragMe).dragTo(this.page.locator(this.dropHere));
         expect(await this.page.locator(this.dropHere).textContent()).toContain('Dropped!');
+        expect(await this.page.locator(this.dropHere)).toHaveCSS('background-color', 'rgb(70, 130, 180)')
     }
 }
