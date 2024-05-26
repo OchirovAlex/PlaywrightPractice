@@ -19,6 +19,6 @@ export class DropDown{
         await this.page.locator(this.dropDownInput).click();
         expect(this.page.locator(this.dropDownList)).toHaveText(this.text);
         await this.page.locator(this.dropDownList).filter({hasText:'Dark'}).click()
-        expect(this.page.locator(this.header)).toHaveCSS('background-color', 'rgb(34, 43, 69)');
+        await expect(this.page.locator(this.header)).toHaveCSS('background-color', 'rgb(34, 43, 69)');
     }
 }
