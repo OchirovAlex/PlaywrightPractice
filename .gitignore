@@ -45,3 +45,6 @@ Thumbs.db
 /blob-report/
 /playwright/.cache/
 /env
+/.auth/
+/screen/
+/screenShot/
