@@ -1,4 +1,4 @@
-import {test, expect, defineConfig, devices} from '@playwright/test'
+import {test, expect, devices} from '@playwright/test'
 
 // test.use({
 //     viewport:{
@@ -7,7 +7,7 @@ import {test, expect, defineConfig, devices} from '@playwright/test'
 //     }
 // })
 test.use({
-    ...devices['Mobile Chrome']
+    ...devices['iPhone 14']
 })
 
 
